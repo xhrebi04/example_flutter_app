@@ -26,7 +26,7 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   void onLoginBtnPress() {
-    String errorMsg;
+    String errorMsg = '';
 
     if (emailController.text.isEmpty) {
       errorMsg = S.of(context).empty_email_field_error_msg;
