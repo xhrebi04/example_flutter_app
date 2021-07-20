@@ -17,8 +17,6 @@ class _LoginScreenState extends State<LoginScreen> {
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
 
-  bool isPasswordObscured = true;
-
   @override
   void dispose() {
     emailController?.dispose();
@@ -46,11 +44,6 @@ class _LoginScreenState extends State<LoginScreen> {
     // TODO
     // Add request to BE
     // Add navigation to HomeScreen
-  }
-
-  void onForgottenPasswordPress() {
-    // TODO
-    // Navigate to Forgotten Password Screen
   }
 
   @override
