@@ -1,4 +1,5 @@
 import 'package:example_flutter/components/buttons/primary_btn.dart';
+import 'package:example_flutter/components/constants/ui.dart';
 import 'package:example_flutter/components/form/heading_form_field.dart';
 import 'package:example_flutter/components/navigation/app_bar_title.dart';
 import 'package:example_flutter/generated/l10n.dart';
@@ -55,7 +56,7 @@ class _LoginScreenState extends State<LoginScreen> {
           brightness: Brightness.light,
           backgroundColor: Color(MyColors.White),
           title: AppBarTitle(title: S.of(context).login),
-          elevation: 0,
+          elevation: NO_ELEVATION,
         ),
         body: LayoutBuilder(builder: (context, constraint) {
           return SingleChildScrollView(
@@ -67,13 +68,18 @@ class _LoginScreenState extends State<LoginScreen> {
                   children: [
                     Container(
                         margin: EdgeInsets.only(
-                            left: 20, right: 20, top: 31, bottom: 20),
+                            left: LEFT_MARGIN,
+                            right: RIGHT_MARGIN,
+                            top: 31,
+                            bottom: BOTTOM_FORM_FIELD_MARGIN),
                         child: HeadingFormField(
                             heading: S.of(context).email,
                             controller: emailController)),
                     Container(
-                        margin:
-                            EdgeInsets.only(left: 20, right: 20, bottom: 20),
+                        margin: EdgeInsets.only(
+                            left: LEFT_MARGIN,
+                            right: RIGHT_MARGIN,
+                            bottom: BOTTOM_FORM_FIELD_MARGIN),
                         child: HeadingFormField(
                           heading: S.of(context).password,
                           obscureText: true,
@@ -82,8 +88,8 @@ class _LoginScreenState extends State<LoginScreen> {
                     Spacer(),
                     SafeArea(
                       child: Container(
-                        margin:
-                            EdgeInsets.only(left: 20, right: 20, bottom: 20),
+                        margin: EdgeInsets.only(
+                            left: LEFT_MARGIN, right: RIGHT_MARGIN, bottom: 20),
                         child: PrimaryBtn(
                             title: S.of(context).log_in,
                             onPress: onLoginBtnPress),

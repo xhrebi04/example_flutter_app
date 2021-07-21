@@ -1,0 +1,4 @@
+const LEFT_MARGIN = 20.0;
+const RIGHT_MARGIN = 20.0;
+const BOTTOM_FORM_FIELD_MARGIN = 20.0;
+const NO_ELEVATION = 0.0;
