@@ -1,7 +1,7 @@
 import 'package:example_flutter/components/buttons/primary_btn.dart';
-import 'package:example_flutter/components/constants/ui.dart';
 import 'package:example_flutter/components/form/heading_form_field.dart';
 import 'package:example_flutter/components/navigation/app_bar_title.dart';
+import 'package:example_flutter/constants/ui.dart';
 import 'package:example_flutter/generated/l10n.dart';
 import 'package:example_flutter/theme/my_colors.dart';
 import 'package:example_flutter/utils/alerts.dart';
